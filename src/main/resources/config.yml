@@ -1,0 +1,37 @@
+messages:
+  not-coins: '&cErreur : vous navez pas assez dargents !'
+  not-buy: '&cErreur : vous ne pouvez pas acheter cela'
+inventory:
+  grade:
+    # nom de l'inventaire
+    inventory: "&cGrades"
+    # item représentative
+    item: DIAMOND_SWORD
+    # slot de l'item
+    slot: 10
+    # multiple de 9
+    size: 27
+    items:
+      empereur:
+        name: "&cEmpereur"
+        item: EMERALD
+        data: 0
+        slot: 10
+        # 0 --> pas achetable
+        coins: 1000
+        # si le joueur a une de ces permissions alors il ne peut pas acheter l'item
+        # if the player has one of these permissions then he cannot buy the item
+        permissions:
+        - '*'
+        # commandes executees lors de l'achat
+        # orders executed during the purchase
+        commands:
+        - 'broadcast %player% vien dacheter %item%, &6/boutique'
+        give:
+          gemme:
+            item: NETHER_STAR
+            amount: 1
+            name: '&c&lEmpereur'
+            data: 0
+        lore: 
+        - '&cgrade empereur'

@@ -1,0 +1,6 @@
+name: Boutique
+version: 1.0
+author: GnoKize
+main: fr.gnokize.Boutique
+commands:
+  boutique:
